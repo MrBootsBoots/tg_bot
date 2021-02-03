@@ -53,39 +53,28 @@ HINT_ANIMAL4 = (
 def animal2(bot: Bot, update: Update):
   update.message.reply_text(random.choice(ANIMAL2))
 
-)
-
 @run_async
 def animal3(bot: Bot, update: Update):
   update.message.reply_text(random.choice(ANIMAL3))
-
-)
 
 @run_async
 def animal4(bot: Bot, update: Update):
   update.message.reply_text(random.choice(ANIMAL4))
 
-)
-
 @run_async
 def hint_animal2(bot: Bot, update: Update):
   update.message.reply_text(random.choice(HINT_ANIMAL2))
-
-)
 
 @run_async
 def hint_animal3(bot: Bot, update: Update):
   update.message.reply_text(random.choice(HINT_ANIMAL3))
 
-)
-
 @run_async
 def hint_animal4(bot: Bot, update: Update):
   update.message.reply_text(random.choice(HINT_ANIMAL4))
 
-)
-
 __help__ = """
+Here is ANIMAL GAME Module
 - /animal2 : animal name guessing game played between 2 players.
 - /hint(_)animal2 : animal game hint (type that cmd without bracket).
 - /animal3 : animal name guessing game played between 3 players.
